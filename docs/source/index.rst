@@ -24,8 +24,10 @@ Contents
 --------
 
 .. toctree::
-   
+   :maxdepth: 1
+
    usage
    use cases
    benchmark
+   citation
    
