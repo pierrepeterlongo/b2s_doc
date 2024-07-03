@@ -27,3 +27,5 @@ Contents
    
    usage
    use cases
+   benchmark
+   
