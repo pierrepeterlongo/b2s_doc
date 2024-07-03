@@ -32,6 +32,7 @@ Specifying strands
 In this case, the kmers found in `compacted_kmers.fasta` are indexed in their original orientation, and kmers extracted from `reads.fasta` are queried in their original orientation. 
 
 .. Note:: 
+
   Without the `--stranded` option, all kmers (indexed and queried) are considered in their canonical form.
 
 
