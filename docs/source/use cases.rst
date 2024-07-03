@@ -49,7 +49,8 @@ Reading sequences from standard input
 
   cat reads.fasta | back_to_sequences --in-kmers compacted_kmers.fasta --out-sequences filtered_reads.fasta 
 
-Do not provide the `--in-sequences` if your input data are read from stdin.
+.. note::
+  When rading sequences from standard input, do not provide the `--in-sequences`
 
 Using several input read sets
 ------------------
