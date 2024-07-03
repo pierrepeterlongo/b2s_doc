@@ -17,4 +17,4 @@ Anthony Baire, Pierre Peterlongo
 	}
 
 
-The paper is submitted to `JOSS` <https://joss.theoj.org/>_, which generated the following `pdf` <https://github.com/openjournals/joss-papers/blob/joss.06872/joss.06872/10.21105.joss.06872.pdf>_.
+The paper is submitted to `JOSS <https://joss.theoj.org/>`_, which generated the following `pdf <https://github.com/openjournals/joss-papers/blob/joss.06872/joss.06872/10.21105.joss.06872.pdf>`_.
