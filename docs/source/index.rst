@@ -16,10 +16,6 @@ TGGATAAAAAGGCTGACGAAAGGTCTAGCTAAAATTGTCAGGTGCTCTCAGATAAAGCAGTA...
 In this case 20 kmers are shared with the indexed kmers. This represents 6.13% of the kmers in the sequence.
 
 
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
 Contents
 --------
 
