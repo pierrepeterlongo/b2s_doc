@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'back to sequences'
+copyright = '2024, Peterlongo'
+author = 'Peterlongo'
 
-release = '0.1'
-version = '0.1.0'
+release = '0.6.6'
+version = '0.6.6'
 
 # -- General configuration
 
