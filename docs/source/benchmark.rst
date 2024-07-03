@@ -2,6 +2,8 @@ Back to sequences' Quick benchmark
 ==================================
 Results were obtained with back to sequences, version ``v0.6.5``.
 
+Results
+-------
 This benchmark is reproducible by running ``generate_data.sh`` and then ``bench.sh`` in the ``benchs`` folder. 
 
   Presented results were obtained on 
@@ -23,3 +25,19 @@ Number of reads  Time genouest  Time mac  Time AMD  max RAM
 100,000,000      47s            58s       48s       0.13 GB
 200,000,000      1m32s          1m52s     1m44      0.13 GB
 ===============  =============  ========  ========  =======
+
+
+Side note: generate data for testing
+------------------------------------
+
+You may be interested by generating a specific data set.
+.. code-block:: console
+
+  # Generate 1 reference sequence of random length 50000 and minimum length 100
+  python scripts/generate_random_fasta.py 1 50000 100 ref_seq.fasta
+
+  # Extract 1000 random "reads", each of length in [100;500] from the reference sequence
+  python3 scripts/extract_random_sequences.py --input ref_seq.fasta --min_size 100 --max_size 500 --num 1000 --output reads.fasta 
+
+  # From those reads, extract 500 random sequence containing the kmers. Those kmers are stored in sequences of length in [31;70]
+  python3 scripts/extract_random_sequences.py --input reads.fasta --min_size 31 --max_size 70 --num 500 --output compacted_kmers.fasta
