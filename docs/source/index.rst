@@ -1,7 +1,7 @@
 Welcome to "back to sequences"'s documentation!
 ===================================
 
-**`back to sequences <https://github.com/pierrepeterlongo/back_to_sequences>`_** is a rust program for bioinformaticians. 
+`back to sequences <https://github.com/pierrepeterlongo/back_to_sequences>`_ is a rust program for bioinformaticians. 
 It's purpose is to find where a set of :math:`k`-mers occurs in a set of input genomic sequences.
 
 More precisely: 
