@@ -1,4 +1,4 @@
-Welcome to back to sequences's documentation!
+Welcome to "back to sequences"'s documentation!
 ===================================
 
 **back to sequences** is a rust program for bioinformaticians. 
@@ -24,7 +24,7 @@ Contents
 --------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    usage
    use cases
