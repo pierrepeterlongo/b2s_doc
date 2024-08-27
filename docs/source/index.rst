@@ -25,5 +25,6 @@ Contents
    usage
    use cases
    benchmark
+   methods
    citation
    
