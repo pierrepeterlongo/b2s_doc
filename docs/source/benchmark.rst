@@ -29,16 +29,16 @@ Number of reads  Time genouest  Time mac  Time AMD  max RAM
 
 Benchmark data generation details
 ---------------------------------
-We generated a random sequence  (:math: `s`) on the alphabet (A,C,G,T) of size
-100 million base pairs. From this sequence  (:math: `s`), we randomly extracted
+We generated a random sequence  (:math:`s`) on the alphabet (A,C,G,T) of size
+100 million base pairs. From this sequence  (:math:`s`), we randomly extracted
 50,000 sub-sequences each of size 50. We consider these sequences as
-containing the set (:math:`K`) of (:math: `k`)-mers to be searched. As we used
-(:math:`k=31`), each subsequence contains (:math:`50-31+1 = 20`) (:math: `k`)mers. Doing so, we
-consider a set of at most {math}`50000\times 20 = 1,000,000` (:math: `k`)-mers.
+containing the set (:math:`K`) of (:math:`k`)-mers to be searched. As we used
+(:math:`k=31`), each subsequence contains (:math:`50-31+1 = 20`) (:math:`k`)mers. Doing so, we
+consider a set of at most {math}`50000\times 20 = 1,000,000` (:math:`k`)-mers.
 
 We also generated six sets composed respectively of 10 thousand, 100 thousand, one million, 10
 million, 100 million, and 200 million sequences, each of length 100
-nucleotides. Each sequence is randomly sampled from (:math: `s`).
+nucleotides. Each sequence is randomly sampled from (:math:`s`).
 
 Side note: generate data for testing
 ------------------------------------
