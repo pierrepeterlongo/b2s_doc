@@ -92,7 +92,7 @@ Benchmark on *Tara* ocean seawater metagenomic data
 The previously proposed benchmark shows the scalability of the proposed
 approach. Although performed on random sequences, there is no objective
 reason why performance should differ on real data, regardless of the
-number of $k$-mers actually detected in the data. We verify this claim
+number of :math:`k`-mers actually detected in the data. We verify this claim
 by applying `back_to_sequences` to real complex metagenomic sequencing
 data from the `Tara <https://www.nature.com/articles/s41579-020-0364-5>`_ ocean project.
 
