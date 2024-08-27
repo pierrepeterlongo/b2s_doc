@@ -1,8 +1,11 @@
+Methods and features
+====================
+
 Methods
-=====
+-------
 
 `back_to_sequences` is written in `rust`. It uses the native HashMap for storing the searched :math:`k`-mer set,
-with alternative [aHash](https://github.com/tkaitchuck/aHash) hash function. This data structure is used to index each of the searched :math:`k`-mer set. 
+with alternative `aHash <https://github.com/tkaitchuck/aHash>`_ hash function. This data structure is used to index each of the searched :math:`k`-mer set. 
 
 Depending on the user choice, the original or the canonical version of
 each :math:`k`-mer from the "reference-:math:`k`-mers" set is indexed. The source code
@@ -22,7 +25,11 @@ counting the number of occurrences of each :math:`k`-mer from :math:`K` in
 occurrence positions and orientation and to output this information.
 Sequences are queried in parallel.
 
-A minimal and a maximal threshold can be fixed by the user. A queried
+
+Additional features
+-------------------
+
+A **minimal and a maximal threshold** can be fixed by the user. A queried
 sequence is output only if its percentage of :math:`k`-mers that belong to the
 searched :math:`k`-mers is strictly higher than the minimal threshold and
 lower or equal to the maximal threshold. While the minimal threshold
@@ -30,7 +37,7 @@ enables to focus on sequences that are similar enough with a set of
 :math:`k`-mers, the maximal threshold offers for instance a way to remove
 contaminated sequences.
 
-The sequences to be queried can be provided as a fasta or fastq file
+The **file format** of the sequences to be queried can be provided as a fasta or fastq file
 (gzipped or not). They can also be read directly from the standard
 input (*stdin*). This offers the may to stream sequences as they arrive,
 for instance when they are obtained during an Oxford Nanopore sequencing
