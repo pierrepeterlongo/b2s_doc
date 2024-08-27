@@ -28,13 +28,17 @@ Number of reads  Time genouest  Time mac  Time AMD  max RAM
 
 Reproduce the benchmark
 -----------------------
+
 .. code-block:: console
+
   cd benchs
   ./generate_data.sh
   ./bench.sh
 
 In case you are running out of space, you can limit the bench to a smaller number of reads by running:
+
 .. code-block:: console
+
   cd benchs
   ./generate_data.sh 100000
   ./bench.sh 100000
@@ -42,7 +46,9 @@ In case you are running out of space, you can limit the bench to a smaller numbe
 This will generate and bench only 10,000 and 100,000 reads.
 
 After running the benchmark, you may remove the generated data by running:
+
 .. code-block:: console
+
   cd benchs
   ./clean.sh
 
