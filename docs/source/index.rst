@@ -1,4 +1,4 @@
-Welcome to "back to sequences"'s documentation!
+Welcome to "back to sequences" documentation!
 ===================================
 
 `back to sequences <https://github.com/pierrepeterlongo/back_to_sequences>`_ is a rust program for bioinformaticians. 
