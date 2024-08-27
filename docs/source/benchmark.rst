@@ -36,7 +36,7 @@ containing the set (:math:`K`) of $k$-mers to be searched. As we used
 $k=31$, each subsequence contains $50-31+1 = 20 kmers$. Doing so, we
 consider a set of at most $50000\times 20 = 1,000,000$ $k$-mers.
 
-We also generated six sets: (:math:`S_\{10k\}`), (:math:`S_\{100k\}`), (:math:`S_\{1M\}`), (:math:`S_\{10M\}`), (:math:`S_\{100M\}`), (:math:`S_\{200M\}`),
+We also generated six sets: (:math:`S_(\{10k\})`), (:math:`S_\{100k\}`), (:math:`S_\{1M\}`), (:math:`S_\{10M\}`), (:math:`S_\{100M\}`), (:math:`S_\{200M\}`),
 composed respectively of 10 thousand, 100 thousand, one million, 10
 million, 100 million, and 200 million sequences, each of length 100
 nucleotides. Each sequence is randomly sampled from $s$.
@@ -45,6 +45,7 @@ Side note: generate data for testing
 ------------------------------------
 
 You may be interested by generating a specific data set.
+
 .. code-block:: console
 
   # Generate 1 reference sequence of random length 50000 and minimum length 100
