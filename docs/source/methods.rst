@@ -1,3 +1,6 @@
+Methods
+=====
+
 `back_to_sequences` is written in `rust`. It uses the native HashMap for storing the searched (:math:`k`)-mer set,
 with alternative [aHash](https://github.com/tkaitchuck/aHash) hash function. This data structure is used to index each of the searched (:math:`k`)-mer set. 
 
