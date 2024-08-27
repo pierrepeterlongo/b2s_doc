@@ -5,14 +5,14 @@ Results were obtained with back to sequences, version ``v0.6.5``.
 Results
 -------
 This benchmark is reproducible by running ``generate_data.sh`` and then ``bench.sh`` in the ``benchs`` folder. 
+Running time is given by the ``\usr\bin\time`` command, considering the ``real`` field.
 
-  Presented results were obtained on 
+Presented results were obtained on 
 * the GenOuest platform on a node with 32 threads Xeon 2.2 GHz, denoted by "genouest" in the table below.
 * a MacBook, Apple M2 pro, 16 GB RAM, with 10 threads, denoted by "mac" in the table below.
 * AMD Ryzen 7 4.2 GHz 5800X 64 GB RAM,  with 16 threads, denoted by "AMD" in the table below.
 
 We indexed: one million kmers (exactly 995,318) of length 31.
-
 We queried: from 10,000 reads to 200 million reads (+ 1 billion on the cluster), each of length 100.
 
 ===============  =============  ========  ========  =======
@@ -26,11 +26,30 @@ Number of reads  Time genouest  Time mac  Time AMD  max RAM
 200,000,000      1m32s          1m52s     1m44      0.13 GB
 ===============  =============  ========  ========  =======
 
+Reproduce the benchmark
+-----------------------
+.. code-block:: console
+  cd benchs
+  ./generate_data.sh
+  ./bench.sh
+
+In case you are running out of space, you can limit the bench to a smaller number of reads by running:
+.. code-block:: console
+  cd benchs
+  ./generate_data.sh 100000
+  ./bench.sh 100000
+
+This will generate and bench only 10,000 and 100,000 reads.
+
+After running the benchmark, you may remove the generated data by running:
+.. code-block:: console
+  cd benchs
+  ./clean.sh
 
 Benchmark data generation details
 ---------------------------------
-We generated a random sequence  :math:`s` of size 100 million base pairson the alphabet (:math:`A,C,G,T`). From this sequence  (:math:`s`), we randomly extracted
-50,000 sub-sequences each of size 50. We consider these sequences as
+We generated a random sequence  :math:`s` of size 100 million base pairs on the alphabet (:math:`A,C,G,T`). 
+From this sequence  :math:`s`, we randomly extracted 50,000 sub-sequences each of size 50. We consider these sequences as
 containing the set :math:`K` of :math:`k`-mers to be searched. As we used
 :math:`k=31`, each subsequence contains :math:`50-31+1 = 20` :math:`k`-mers. Doing so, we
 consider a set of at most :math:`50000\times 20 = 1,000,000` :math:`k`-mers.
@@ -39,10 +58,10 @@ We also generated six sets composed respectively of 10 thousand, 100 thousand, o
 million, 100 million, and 200 million sequences, each of length 100
 nucleotides. Each sequence is randomly sampled from :math:`s`.
 
-Side note: generate data for testing
+Generate data for testing
 ------------------------------------
 
-You may be interested by generating a specific data set.
+You may be interested by generating a specific data set. For instance
 
 .. code-block:: console
 
