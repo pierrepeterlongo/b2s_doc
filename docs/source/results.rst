@@ -94,11 +94,12 @@ approach. Although performed on random sequences, there is no objective
 reason why performance should differ on real data, regardless of the
 number of $k$-mers actually detected in the data. We verify this claim
 by applying `back_to_sequences` to real complex metagenomic sequencing
-data from the [Tara](https://www.nature.com/articles/s41579-020-0364-5) ocean project.
+data from the `Tara <https://www.nature.com/articles/s41579-020-0364-5>`_ ocean project.
 
 We downloaded one of the *Tara* ocean read sets: station number 11
 corresponding to a surface Mediterranean sample, downloaded from the
-European Nucleotide Archive, identifier [ERS488262](https://www.ebi.ac.uk/ena/browser/view/ERS488262). We extracted the
+European Nucleotide Archive, identifier 
+`ERS488262 <https://www.ebi.ac.uk/ena/browser/view/ERS488262>`_. We extracted the
 first 100 million reads, which are all of length 100. Using
 `back_to_sequences` we searched in these reads each of the 69 31-mers
 contained in its first read. On the GenOuest node, `back_to_sequences`
