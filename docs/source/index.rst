@@ -24,7 +24,7 @@ Contents
 
    usage
    use cases
-   benchmark
+   results
    methods
    citation
    
