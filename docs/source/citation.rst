@@ -3,6 +3,8 @@ Citation
   
 Baire et al., (2024). Back to sequences: Find the origin of k-mers. Journal of Open Source Software, 9(101), 7066, https://doi.org/10.21105/joss.07066
 
+bibtex:
+
 .. code-block:: bib
 
 	@article{Baire2024, 
@@ -18,4 +20,3 @@ Baire et al., (2024). Back to sequences: Find the origin of k-mers. Journal of O
 	}
 
 
-The paper is submitted to `JOSS <https://joss.theoj.org/>`_, which generated the following `pdf <https://github.com/openjournals/joss-papers/blob/joss.06872/joss.06872/10.21105.joss.06872.pdf>`_.
