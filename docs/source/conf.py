@@ -6,8 +6,8 @@ project = 'back to sequences'
 copyright = '2024, Peterlongo'
 author = 'Peterlongo'
 
-release = '0.6.7'
-version = '0.6.7'
+release = '0.6.8'
+version = '0.6.8'
 
 # -- General configuration
 
